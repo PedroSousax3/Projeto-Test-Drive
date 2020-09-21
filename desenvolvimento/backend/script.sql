@@ -36,5 +36,4 @@ CREATE TABLE `tb_agendamento` (
  ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
-/*dotnet ef dbcontext scaffold "server=localhost;user id=root;password=1234;database=teste_drive" Pomelo.EntityFrameworkCore.MySql -o Models --data-annotations --force
-*/
+/*dotnet ef dbcontext scaffold "server=localhost;user id=root;password=1234;database=teste_drive" Pomelo.EntityFrameworkCore.MySql -o Models --data-annotations --force*/
