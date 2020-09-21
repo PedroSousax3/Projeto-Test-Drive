@@ -16,7 +16,7 @@ namespace backend.Models
         [Column("id_cliente", TypeName = "int(11)")]
         public int IdCliente { get; set; }
         [Column("id_funcionario", TypeName = "int(11)")]
-        public int? IdFuncionario { get; set; }
+        public int IdFuncionario { get; set; }
         [Column("dt_agendamento", TypeName = "date")]
         public DateTime DtAgendamento { get; set; }
         [Column("hr_inicio", TypeName = "time")]
@@ -31,5 +31,11 @@ namespace backend.Models
         [ForeignKey(nameof(IdCarro))]
         [InverseProperty(nameof(TbCarro.TbAgendamento))]
         public virtual TbCarro IdCarroNavigation { get; set; }
+        [ForeignKey(nameof(IdCliente))]
+        [InverseProperty(nameof(TbCliente.TbAgendamento))]
+        public virtual TbCliente IdClienteNavigation { get; set; }
+        [ForeignKey(nameof(IdFuncionario))]
+        [InverseProperty(nameof(TbFuncionario.TbAgendamento))]
+        public virtual TbFuncionario IdFuncionarioNavigation { get; set; }
     }
 }
