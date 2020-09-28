@@ -6,6 +6,8 @@ import Menu from '../../../components/Menu/index.js'
 //Styles: 
 import { ContainerInfo, StyledAgendar } from './styled.js'
 
+//Services:
+import { CadastrarAgendamento } from '../../../services/agendar.js'
 /*Formatar data:
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat/DateTimeFormat
 */
@@ -16,15 +18,27 @@ export default function Agendar(){
     const [ fim, setFim ] = useState("");
     const [ observacao, setObservacao ] = useState("");
 
+    function ConvertTime(time, funcao)
+    {
+        let hora = Number(time[0] + time[1]);
+        let minuto =  Number(time[3] + time[4]);
+        let result = new Date(1923,11,11, hora, minuto).toLocaleTimeString();
+
+        funcao(result);
+    }
+
     function Agendar(){
         const dados = {
+            carro : 1,
+            cliente : 1,
             data,
             inicio,
             fim,
             observacao
         }
-
-        console.log(dados);
+        
+        CadastrarAgendamento(dados);
+        console.log("OK");
     }
     return (
         <StyledAgendar>
@@ -45,7 +59,7 @@ export default function Agendar(){
                         <input type="time" 
                           className="form-control" 
                        defaultValue={inicio}
-                           onChange={(x) => setInicio(x.target.value)}
+                           onChange={(x) => ConvertTime(x.target.value, setInicio)}
                         />
                     </div>
                     <div className="form-group">
@@ -53,7 +67,7 @@ export default function Agendar(){
                         <input type="time" 
                           className="form-control" 
                         placeholder="Seu email" 
-                        onChange={(x) => setFim(x.target.value)}
+                        onChange={(x) => ConvertTime(x.target.value, setFim)}
                         />
                     </div>
                     <div className="form-group">
