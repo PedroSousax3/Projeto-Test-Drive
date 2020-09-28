@@ -23,7 +23,7 @@ export default function Menu(){
                                     <Link to = "/">Agendar Teste Drive</Link>
                                 </li>
                                 <li>
-                                    <Link to = "/">Consultar Seus Agendamentos</Link>
+                                    <Link to = "/ConsultarAgendamentos">Consultar Seus Agendamentos</Link>
                                 </li>
                             </ul>
                         </li>
