@@ -87,4 +87,4 @@ CREATE TABLE `teste_drive`.`tb_login` (
   FOREIGN KEY (`id_cliente`) REFERENCES `teste_drive`.`tb_cliente` (`id_cliente`),
   FOREIGN KEY (`id_funcionario`) REFERENCES `teste_drive`.`tb_funcionario` (`id_funcionario`)
 );
-/*dotnet ef dbcontext scaffold "server=localhost;user id=root;password=1234;database=teste_drive" Pomelo.EntityFrameworkCore.MySql -o Models --data-annotations --force*/
+/* dotnet ef dbcontextscaffold "server=localhost;user id=root;password=1234;database=teste_drive" Pomelo.EntityFrameworkCore.MySql -o Models --data-annotations --force*/

@@ -992,11 +992,20 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\infoc33\\.nuget\\packages\\": {}
+=======
+<<<<<<< HEAD
+    "C:\\Users\\infod38\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\infoc24\\.nuget\\packages\\": {}
+>>>>>>> 50d107712abd162ee3c0574cd3d09f69330bbaf8
+>>>>>>> b45f5e8c5f24d1d1900e467ea3c11c5bf0d84bff
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\infoc33\\Desktop\\Projeto-Test-Drive\\desenvolvimento drive\\backend\\backend.csproj",
       "projectName": "backend",
       "projectPath": "C:\\Users\\infoc33\\Desktop\\Projeto-Test-Drive\\desenvolvimento drive\\backend\\backend.csproj",
@@ -1005,6 +1014,27 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\infoc33\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+<<<<<<< HEAD
+      "projectUniqueName": "C:\\Users\\infod38\\Desktop\\Projeto-Test-Drive\\desenvolvimento drive\\backend\\backend.csproj",
+      "projectName": "backend",
+      "projectPath": "C:\\Users\\infod38\\Desktop\\Projeto-Test-Drive\\desenvolvimento drive\\backend\\backend.csproj",
+      "packagesPath": "C:\\Users\\infod38\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\infod38\\Desktop\\Projeto-Test-Drive\\desenvolvimento drive\\backend\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\infod38\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+      "projectUniqueName": "C:\\Users\\infoc24\\Desktop\\Projeto-Test-Drive\\desenvolvimento drive\\backend\\backend.csproj",
+      "projectName": "backend",
+      "projectPath": "C:\\Users\\infoc24\\Desktop\\Projeto-Test-Drive\\desenvolvimento drive\\backend\\backend.csproj",
+      "packagesPath": "C:\\Users\\infoc24\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\infoc24\\Desktop\\Projeto-Test-Drive\\desenvolvimento drive\\backend\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\infoc24\\AppData\\Roaming\\NuGet\\NuGet.Config"
+>>>>>>> 50d107712abd162ee3c0574cd3d09f69330bbaf8
+>>>>>>> b45f5e8c5f24d1d1900e467ea3c11c5bf0d84bff
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"

@@ -28,7 +28,20 @@ namespace backend.Database
             return Cliente;
         }
 
+        public Models.TbCliente Alterar(int idCliente, Models.TbCliente novo)
+        {
+            Models.TbCliente Cliente = this.ConsultarPorId(idCliente);
 
+           Cliente.IdCliente = novo.IdCliente;
+           Cliente.NmCliente = novo.NmCliente;
+            Cliente.DtCliente = novo.DtCliente;
+            Cliente.HrInicio = novo.HrInicio;
+            Cliente.HrFim = novo.HrFim;
+            Cliente.DsStatus = novo.DsStatus;
+            Cliente.DsCliente = novo.DsCliente;
+
+            return Cliente;
+        }
 
 
    
