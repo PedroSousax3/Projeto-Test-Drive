@@ -19,7 +19,7 @@ namespace backend.Bussiness
             return funcaoDatabase.Listar();
         }
 
-        public List<Models.TbAgendamento> ListarAgendamentoPorId(int idcliente)
+        public List<Models.TbAgendamento> ListarAgendamentos(int idcliente)
         {
             if(idcliente <= 0)
                 throw new ArgumentException("Campo id não foi inserido.");
@@ -27,15 +27,15 @@ namespace backend.Bussiness
             return funcaoDatabase.ListarPorCliente(idcliente);
         }
 
-        public Models.TbAgendamento ConsultarAgendamentoPorId(int idagendamento)
+        public Models.TbAgendamento ConsultarAgendamentos(int idagendamento)
         {
             if(idagendamento <= 0)
                 throw new ArgumentException("Campo id não foi inserido.");
             
-            return funcaoDatabase.ConsultarPorId(idagendamento);
+            return funcaoDatabase.ConsultarAgendamentos(idagendamento);
         }
 
-        public Models.TbAgendamento AlterarAgendamentoPorId(int idagendamento, Models.TbAgendamento agendamento)
+        public Models.TbAgendamento AlterarAgendamentos(int idagendamento, Models.TbAgendamento agendamento)
         {
             if(idagendamento <= 0)
              throw new ArgumentException("Id do agendamento não foi informado.");
@@ -43,7 +43,7 @@ namespace backend.Bussiness
             return funcaoDatabase.Alterar(idagendamento, agendamento);
         }
 
-        public Models.TbAgendamento RemoverAgendamentoPorId(int idagendamento)
+        public Models.TbAgendamento RemoverAgendamentos(int idagendamento)
         {
             if(idagendamento <= 0)
                 throw new ArgumentException("Campo id não foi inserido.");

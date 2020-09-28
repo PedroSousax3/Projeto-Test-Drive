@@ -992,11 +992,16 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\infod38\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\infoc24\\.nuget\\packages\\": {}
+>>>>>>> 50d107712abd162ee3c0574cd3d09f69330bbaf8
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\infod38\\Desktop\\Projeto-Test-Drive\\desenvolvimento drive\\backend\\backend.csproj",
       "projectName": "backend",
       "projectPath": "C:\\Users\\infod38\\Desktop\\Projeto-Test-Drive\\desenvolvimento drive\\backend\\backend.csproj",
@@ -1005,6 +1010,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\infod38\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+      "projectUniqueName": "C:\\Users\\infoc24\\Desktop\\Projeto-Test-Drive\\desenvolvimento drive\\backend\\backend.csproj",
+      "projectName": "backend",
+      "projectPath": "C:\\Users\\infoc24\\Desktop\\Projeto-Test-Drive\\desenvolvimento drive\\backend\\backend.csproj",
+      "packagesPath": "C:\\Users\\infoc24\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\infoc24\\Desktop\\Projeto-Test-Drive\\desenvolvimento drive\\backend\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\infoc24\\AppData\\Roaming\\NuGet\\NuGet.Config"
+>>>>>>> 50d107712abd162ee3c0574cd3d09f69330bbaf8
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"

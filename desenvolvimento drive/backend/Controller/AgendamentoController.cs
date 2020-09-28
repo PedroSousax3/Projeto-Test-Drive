@@ -47,11 +47,11 @@ namespace backend.Controller
             }
         }
 
-        public ActionResult<List<Models.Response.AgendaResponse>> ListarPorIdController(int idcliente)
+        public ActionResult<List<Models.Response.AgendaResponse>> ListarAgendamentos(int idcliente)
         {
             try
             {
-                List<Models.TbAgendamento> agendamentos = funcaoBusiness.ListarAgendamentoPorId(idcliente);
+                List<Models.TbAgendamento> agendamentos = funcaoBusiness.ListarAgendamentos(idcliente);
                 List<Models.Response.AgendaResponse> result =  agendamentos.Select(x => Conversor.Convert(x)).ToList();
 
                 return result;
@@ -70,7 +70,7 @@ namespace backend.Controller
             try
             {
                 Models.TbAgendamento agendamento = Conversor.Convert(novo);
-                Models.TbAgendamento alterado = funcaoBusiness.AlterarAgendamentoPorId(idagendamento, agendamento);
+                Models.TbAgendamento alterado = funcaoBusiness.AlterarAgendamentos(idagendamento, agendamento);
                 return Conversor.Convert(alterado);                
             }
             catch(System.Exception ex)
@@ -85,7 +85,7 @@ namespace backend.Controller
         [HttpDelete]
         public Models.Response.AgendaResponse RemoverController(int idagendamento)
         {
-            Models.TbAgendamento removido = funcaoBusiness.RemoverAgendamentoPorId(idagendamento);
+            Models.TbAgendamento removido = funcaoBusiness.RemoverAgendamentos(idagendamento);
             Models.Response.AgendaResponse result = Conversor.Convert(removido);
 
             return result;
