@@ -1,5 +1,0 @@
-login deve passar as informações de que realiza as ações no sistema.
-
-repositório de informações:
-- cookies
-- local storage
