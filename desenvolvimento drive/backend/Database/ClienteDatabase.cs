@@ -17,6 +17,20 @@ namespace backend.Database
         public List<Models.TbCliente> ListarClientes()
         {
             return bd.TbCliente.ToList();
-        }       
+        }
+
+    
+         public Models.TbCliente DeletarCliente(int idClinte)
+        {
+            Models.TbCliente Cliente = this.Consultar(idClinte);
+            bd.Remove(Cliente);
+            bd.SaveChanges();
+            return Cliente;
+        }
+
+
+
+
+   
     }
 }
